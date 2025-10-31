@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Logs (Page #3)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Drone Dashboard</h1>
+    <nav>
+      <a href="index2.html">Page #1: Config</a>
+      <a href="form.html">Page #2: Log Form</a>
+      <a href="logs.html" class="active">Page #3: View Logs</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Recent Logs (12 per page)</h2>
+    
+    <div class="pagination">
+      <button id="prev-button" disabled>Previous</button>
+      <span id="page-info">Page 1</span>
+      <button id="next-button">Next</button>
+    </div>
+
+    <table id="logs-table">
+      <thead>
+        <tr>
+          <th>Created (เวลา)</th>
+          <th>Country</th>
+          <th>Drone ID</th>
+          <th>Drone Name</th>
+          <th>Celsius (อุณหภูมิ)</th>
+        </tr>
+      </thead>
+      <tbody id="logs-tbody">
+        <tr>
+          <td colspan="5">Loading logs...</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <script src="config.js"></script> 
+  <script src="main.js"></script>
+</body>
+</html>

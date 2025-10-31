@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Form (Page #2)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index2.html">Page #1: Config</a>
+      <a href="form.html" class="active">Page #2: Log Form</a>
+      <a href="logs.html">Page #3: View Logs</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Create New Temperature Log</h2>
+    
+    <div id="status-message">Loading config, please wait...</div>
+
+    <form id="log-form" style="display: none;">
+      <div class="form-group">
+        <label for="celsius-input">Temperature (Celsius):</label>
+        <input type="number" id="celsius-input" step="0.1" required>
+      </div>
+      
+      <button type="submit">Submit Data</button>
+    </form>
+    
+  </main>
+
+  <script src="config.js"></script> 
+  <script src="main.js"></script>
+</body>
+</html>
